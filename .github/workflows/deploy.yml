@@ -22,6 +22,7 @@ jobs:
         run: |
           echo "HOST->'${{ secrets.EC2_HOST }}'"
           echo "USER->'${{ secrets.EC2_USER }}'"
+          echo "USER length -> $(echo -n '${{ secrets.EC2_USER }}' | wc -c)"
           echo "PATH->'${{ secrets.EC2_PATH }}'"
 
       - name: Deploy to EC2
