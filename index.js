@@ -8,7 +8,7 @@ const app=express();
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Welcome to Node.js Backend API for this project IN',
+    message: 'Welcome to Node.js Backend API for this project IN and new updates will be posted here',
     version: '1.0.0',
    
   });
