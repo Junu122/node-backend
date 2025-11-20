@@ -7,6 +7,7 @@ import morgan from 'morgan';
 const app=express();
 
 app.get('/', (req, res) => {
+  console.log("API is working fine");
   res.json({
     message: 'Welcome to Node.js Backend API for this project IN and new updates will be posted here',
     version: '1.0.0',
