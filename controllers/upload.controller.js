@@ -11,7 +11,7 @@ const uploadFile=async(req,res)=>{
         const result = await uploadToS3(file.buffer, key, file.mimetype);
         res.json({url:result.Location})
     } catch (error) {
-          res.status(500).json({ error: e.message });
+          res.status(500).json({ error: error });
     }
 }
 
