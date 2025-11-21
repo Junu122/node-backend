@@ -1,4 +1,4 @@
-import s3  from "../config/awss3.js"
+import s3  from "../config/s3aws.js"
 
 function uploadToS3(buffer, fileName, mimeType) {
   const params = {
