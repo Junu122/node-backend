@@ -1,5 +1,5 @@
 import express from 'express';
-import uploadRouter from './routes/upload.router';
+import uploadRouter from './routes/upload.router.js';
 import cors from "cors";
 const app=express();
 
