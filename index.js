@@ -1,7 +1,15 @@
 import express from 'express';
 import uploadRouter from './routes/upload.router';
-
+import cors from "cors";
 const app=express();
+
+
+app.use(cors({
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+}));
 
 app.get('/', (req, res) => {
   console.log("API is working fined");
